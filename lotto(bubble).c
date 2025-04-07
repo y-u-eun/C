@@ -14,17 +14,14 @@ void main()
 {   
     int numarr[6];
     
-    for (int i = 0; i < 6; i++)
-    {
+    for (int i = 0; i < 6; i++) {
         srand(time(NULL));
         int num = (int)(rand() % 45) + 1;
         numarr[i] = num;
         sleep(1);
         
-        for (int j = 0; j < i; j++)
-        {
-            if (numarr[i] == numarr[j]) 
-            {
+        for (int j = 0; j < i; j++) {
+            if (numarr[i] == numarr[j]) {
                 i--;
             }
         }
@@ -33,12 +30,9 @@ void main()
     
     /*bubble sort*/
     int tmp = 0;
-    for (int i = 0; i < 6; i++)
-    {
-        for (int j = 0; j < 6; j++)
-        {
-          if (numarr[i] < numarr[j])
-        {
+    for (int i = 0; i < 6; i++) {
+        for (int j = 0; j < 6; j++) {
+          if (numarr[i] < numarr[j]) {
             tmp = numarr[i];
             numarr[i] = numarr[j];
             numarr[j] = tmp;
@@ -47,8 +41,7 @@ void main()
         }
     }
     
-    for (int k = 0; k < 6; k++)
-    {
+    for (int k = 0; k < 6; k++) {
         printf("%d\n", numarr[k]);
     }
     
