@@ -12,7 +12,7 @@ int main()
 {
     int abc = 0;
     int result = 0;
-    while(1)
+    while (1)
     {
         printf("세 자리 정수를 입력하세요.\n");
         scanf("%d", &abc);

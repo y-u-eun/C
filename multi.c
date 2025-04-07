@@ -15,7 +15,7 @@ int main()
     int c = 0;
     int result = 0;
     
-    while(1) {
+    while (1) {
         printf("숫자를 3개 입력하세요.\n");
         scanf("%d %d %d", &a, &b, &c);
         

@@ -12,7 +12,7 @@ void main()
 {
     int a = 0;
     
-    while(1) {
+    while (1) {
         printf("0에서 999까지의 숫자 중 하나를 입력하세요.\n");
         scanf("%d", &a);
     

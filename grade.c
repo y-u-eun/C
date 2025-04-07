@@ -11,7 +11,7 @@ Welcome to GDB Online.
 void main()
 {
     float s = 0.0;
-    while(1)
+    while (1)
     {
         printf("시험 점수를 입력하세요.\n");
         scanf("%f", &s);
