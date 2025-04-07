@@ -13,7 +13,6 @@ Welcome to GDB Online.
 void main()
 {   
     int numarr[6];
-    
     for (int i = 0; i < 6; i++) {
         srand(time(NULL));
         int num = (int)(rand() % 45) + 1;
@@ -27,7 +26,6 @@ void main()
         }
         /*printf("%d\n", num);*/
     }
-    
     /*bubble sort*/
     int tmp = 0;
     for (int i = 0; i < 6; i++) {
@@ -36,13 +34,11 @@ void main()
             tmp = numarr[i];
             numarr[i] = numarr[j];
             numarr[j] = tmp;
-        }
+            }
         tmp = 0;  
         }
     }
-    
     for (int k = 0; k < 6; k++) {
         printf("%d\n", numarr[k]);
     }
-    
 }
