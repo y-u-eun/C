@@ -11,20 +11,19 @@ Welcome to GDB Online.
 void main()
 {
     float s = 0.0;
-    while (1)
-    {
+    while (1) {
         printf("시험 점수를 입력하세요.\n");
         scanf("%f", &s);
         
-        if (s > 100.0 | s < 0.0) {
+        if (s > 100.0 || s < 0.0) {
             printf("점수는 0부터 100까지의 수 입니다.\n");
         } else break;
     }
     
     float bs = 0.0;
-    switch((int)(s / 10))
-    {
-        case 10: case 9:
+    switch((int)(s / 10)) {
+        case 10:
+        case 9:
             printf("A등급\n");
             bs = s * 0.1;
             printf("보너스 점수 : %.2f\n", bs);

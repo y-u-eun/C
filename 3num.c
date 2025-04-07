@@ -20,7 +20,7 @@ int main()
         scanf("%d %d %d", &a, &b, &c);
         
         if (c == 0) {
-        printf("c값에 0을 입력할 수 없습니다.\n");
+            printf("c값에 0을 입력할 수 없습니다.\n");
         } else {
             break;
         }
