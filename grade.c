@@ -24,25 +24,25 @@ void main()
     float bs = 0.0;
     switch((int)(s / 10))
     {
-        case 10 : case 9 :
+        case 10: case 9:
             printf("A등급\n");
             bs = s * 0.1;
             printf("보너스 점수 : %.2f\n", bs);
             printf("보너스 점수를 합한 점수 : %.2f", s + bs);
             break;
-        case 8 :
+        case 8:
             printf("B등급\n");
             bs = s * 0.05;
             printf("보너스 점수 : %.2f\n", bs);
             printf("보너스 점수를 합한 점수 : %.2f", s + bs);
             break;
-        case 7 :
+        case 7:
             printf("C등급");
             break;
-        case 6 :
+        case 6:
             printf("D등급");
             break;
-        default :
+        default:
             printf("F등급");
     }
 }
