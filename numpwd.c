@@ -46,7 +46,7 @@ void main()
         case 9:
             printf("J");
             break;
-        default :
+        default:
             printf("잘못된 입력입니다!");
     }
     
