@@ -27,7 +27,6 @@ void main()
             {
                 i--;
             }
-            
         }
         /*printf("%d\n", num);*/
     }
