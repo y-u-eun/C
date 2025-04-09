@@ -3,7 +3,7 @@
 # include <time.h>
 
 void qusort(int arr[], int first, int last) {
-    // qusort(arry, startindex, lstindex)
+    // qusort(arry, startindex, lastindex)
     if (last <= first) {
         return;
     }
