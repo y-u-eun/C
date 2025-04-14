@@ -14,7 +14,6 @@ void main()
     printf("\n실수를 입력하세요. ");
     scanf("%f", &v.floatVal);
     printf("입력한 값 : %f\t주소값 : %d", v.floatVal, &v.floatVal);
-    getchar();
     printf("\n문자를 입력하세요. ");
     scanf("%s", &v.charVal);
     printf("입력한 값 : %s\t주소값 : %d", v.charVal, &v.charVal);
