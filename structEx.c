@@ -42,7 +42,6 @@ void stprint(struct student *p) {
                 break;
             }
         }
-        
         // 나이는 포인터변수로 선언하지 않았으므로 malloc()을 이용해 공간을
         // 할당하지 않고 주소값을 이용해 바로 저장할 수 있음.
         
