@@ -26,13 +26,20 @@ void stprint(struct student_s *p) {
         p->name = malloc(strlen(tmp) + 1);
         strcpy(p->name, tmp);
         
+        int t = 0;
         while (TRUE) {
             printf("\n나이를 입력하세요. ");
-            scanf("%d", &p->age);
-            if (p->age <= 0) {
-                printf("나이는 양의 정수입니다. 나이를 다시 입력하세요.\n");
+            t = scanf("%d", &p->age);
+            if (t == 1) {
+                if (p->age > 0) {
+                    break;
+                } else {
+                    printf("나이는 양의 정수로 입력해주세요.\n");
+                    while (getchar() != '\n');
+                }
             } else {
-                break;
+                printf("나이는 숫자로 입력해주세요.\n");
+                while (getchar() != '\n');
             }
         }
         
