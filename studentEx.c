@@ -23,7 +23,7 @@ void stprint(struct student *p) {
     // 구조체 배열 s에 이미 3개의 데이터가 있으므로
     // 그 다음 주소부터 입력값을 저장할 수 있도록 p에 3을 더해준다.
     while (TRUE) {
-        char tmp[100];  // 임시로 문자배열을 할당할 변수 선언
+        char tmp[MAX];  // 임시로 문자배열을 할당할 변수 선언
         printf("\n이름을 입력하세요. ");
         scanf("%s", tmp);
         p->name = malloc(strlen(tmp) + 1);  // 메모리(공간) 할당
